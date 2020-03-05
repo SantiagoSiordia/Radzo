@@ -32,7 +32,7 @@
             <a href="index.jsp" class="nav-link kato">Inicio</a>
           </li>
           <li class="nav-item mx-2">
-            <a href="MenuCustomers.jsp" class="nav-link kato">MenÃº</a>
+            <a href="MenuCustomers.jsp" class="nav-link kato">Menú</a>
           </li>
           <li class="nav-item mx-2">
             <a href="recompensas.html" class="nav-link kato">Recompensas</a>

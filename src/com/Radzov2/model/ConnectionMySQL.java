@@ -10,8 +10,8 @@ public class ConnectionMySQL {
 	public Connection connect() {
 		
 		 String server = "jdbc:mysql://localhost:3306/Radzo";
-	     String user = "Sal565";
-	     String password = "12177";
+	     String user = "root";
+	     String password = "Ele&Nes98";
 	     
 	     try {
 	     	 Class.forName("com.mysql.jdbc.Driver");
