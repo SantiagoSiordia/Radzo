@@ -1,0 +1,318 @@
+
+/* GENERAL STYLES */
+:root {
+  --mainRed: rgb(196,21,51);
+  --mainWhite: #fff;
+  --mainBlack: rgb(3,4,5);
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(220,220,220, 0.3);
+}
+@font-face {
+  font-family: KATO;
+  src: url('../KATO.otf');
+}
+.kato{
+  font-family: kato;
+}
+.bitter{
+  font-family: bitter;
+}
+header, body {
+  color: var(--mainBlack);
+  background: var(--mainBlack);
+  font-family: "Mali", cursive;
+}
+.text-slanted {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-red{
+  color: var(--mainRed);
+}
+.btn-red:hover{
+  background: var(--mainBlack);
+  color: var(--mainRed);
+}
+/* ############# Home Page ############# */
+/* Navbar */
+.navbar-toggler{
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainRed)!important;
+}
+#logoradzo{
+  max-height:90px;
+  max-width: 80px;
+}
+.nav-link{
+  font-size: 1.6rem;
+  /* border-bottom: 0.1rem solid var(--mainWhite); */
+}
+.nav-active{
+  border-bottom: 0.1rem solid var(--mainRed);
+}
+.navbar-icon{
+  color:var(--mainWhite);
+  font-size: 1.6rem;
+  position: relative;
+}
+.navbar-icon:hover{
+  color: var(--mainRed);
+}
+.cart-items{
+  color: var(--mainWhite);
+  position: absolute;
+  top:-15%;
+  right: -25%;
+  padding: 0.2rem 0.3rem;
+  background: var(--mainRed);
+  font-size: 0.3rem;
+  border-radius: 50%;
+}
+
+/* Banner */
+.banner{
+  min-height: calc(100vh - 116px);
+  background: url('../img/FondoInicio.jpeg');
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+.letras-inicio{
+  font-size: 60px;
+}
+.ramen-house{
+  font-size: 18px;
+}
+.bg-banner{
+  background-color: rgba(0, 0, 0, 0.7);
+  min-width: 200px;
+}
+/* Featured section */
+
+.featured-container{
+  background: var(--TransGrey);
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-search-icon{
+  background: var(--mainRed);
+  display:inline-block;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  transform: translateX(110%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.featured-search-icon:hover{
+  color: black;
+}
+.featured-container:hover .featured-search-icon{
+  transform: translateX(0%);
+}
+
+.featured-store-link{
+  background: var(--mainRed);
+  color: var(--mainWhite);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  border-radius: 0.5rem;
+  transform: translateX(110%);
+  transition: all 0.5s ease-in-out;
+}
+.featured-store-link:hover{
+  background: var(--mainWhite);
+  color: var(--mainRed);
+  text-decoration: none;
+}
+.featured-container:hover .featured-store-link{
+  transform: translateX(0%);
+}
+/* .old-price{
+  text-decoration: line-through;
+} */
+
+/* SKill */
+.skills{
+  background: var(--mainWhite);
+}
+.skill-icon{
+  color: var(--mainRed);
+  font-size: 2rem;
+}
+/* home filler */
+.home-filler {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-filler.jpeg") center/cover fixed no-repeat;
+}
+.collection-link {
+  color: var(--mainRed);
+  text-decoration: none !important;
+}
+.collection-link:hover {
+  color: var(--mainGrey);
+  text-decoration: none !important;
+}
+.collection-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainRed);
+  margin: 0 auto;
+}
+
+/* ####################### Login page ####################### */
+
+.login-banner {
+  min-height: calc(100vh - 116px);
+  background: url('../img/FondoSignIn.jpeg');
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.login-form {
+  width: 360px;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 60vh;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.txtb span::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  transition: 0.5s; 
+}
+
+.focus + span::before {
+  top: -5px;
+}
+.focus + span::after {
+  width: 100%;
+}
+.logbtn:hover {
+  background-position: right;
+}
+.bottom-text {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* ####################### Sign up page ####################### */
+
+.singup-banner {
+  min-height: calc(100vh - 116px);
+  background: url('../img/FondoSingUp.jpeg');
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* ####################### Rewards ####################### */
+
+.rewards-banner {
+  min-height: calc(100vh - 116px);
+  background: url('../img/FondoRewards.jpeg');
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+/* MENU */
+.menu, .shop{
+  background-color: white;
+}
+.menu h1, .shop h3{
+  background: var(--mainRed);
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.menu img{
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.5s;
+  border-radius: 75px;
+}
+.menu img:hover{
+  transform: scale(2);
+}
+.foods-container{
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+.description{
+  text-align: justify;
+}
+
+/*Star*/
+.stars {
+  font-size: 0;
+	display: inline-block;
+}
+.stars a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 32px;
+	font-size: 2rem;
+	color: #888;
+}
+.stars:hover a {
+	color: rgb(39, 130, 228);
+}
+.stars > a:hover ~ a {
+	color: #888;
+}
+
+/* shopcar */
+#Change{
+  background: var(--mainWhite);
+}
+.hidden{
+  display:none;
+}
